@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+:root {
+  font-family: "Inter", sans-serif;
+
+  --background: #f7f7f5;
+  --surface: #ffffff;
+
+  --text-primary: #161616;
+  --text-secondary: #626262;
+
+  --border: #e5e5e2;
+
+  --dark: #171717;
+
+  /* Temporary until we lock the exact logo color */
+  --accent: #c89b3c;
+  --accent-hover: #ad822f;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: var(--background);
+  color: var(--text-primary);
+  font-family: "Inter", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Manrope", sans-serif;
+}
+
+button,
+a {
+  font-family: inherit;
+}
+
+* {
+  box-sizing: border-box;
+}
