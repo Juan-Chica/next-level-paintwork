@@ -8,7 +8,7 @@ function AboutPreview() {
         {/* Image */}
         <div className="overflow-hidden rounded-2xl">
           <img
-            src="/images/about-team.webp"
+            src={`${import.meta.env.BASE_URL}images/about-team.webp`}
             alt="Next Level Paintwork team"
             className="h-[520px] w-full object-cover"
           />

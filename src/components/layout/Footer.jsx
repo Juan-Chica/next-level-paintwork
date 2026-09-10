@@ -9,7 +9,7 @@ function Footer() {
           <div>
             <Link to="/" className="inline-flex items-center">
               <img
-                src="/images/next-level-logo.png"
+                src={`${import.meta.env.BASE_URL}images/next-level-logo.png`}
                 alt="Next Level Paintwork"
                 className="h-20 w-auto object-contain"
               />

@@ -6,7 +6,7 @@ function Hero() {
       {/* Background image */}
       <div className="absolute inset-0">
         <img
-          src="/images/hero-painting.webp"
+          src={`${import.meta.env.BASE_URL}images/hero-painting.webp`}
           alt="Professional painting project completed by Next Level Paintwork"
           className="h-full w-full object-cover object-center"
         />

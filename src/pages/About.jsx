@@ -75,7 +75,7 @@ function About() {
           <div className="mx-auto grid max-w-7xl gap-14 lg:grid-cols-2 lg:items-center">
             <div className="overflow-hidden rounded-2xl">
               <img
-                src="/images/about-team.webp"
+                src={`${import.meta.env.BASE_URL}images/about-team.webp`}
                 alt="Next Level Paintwork team"
                 className="h-[560px] w-full object-cover"
               />

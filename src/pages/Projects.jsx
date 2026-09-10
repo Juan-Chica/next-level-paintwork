@@ -19,37 +19,37 @@ const projects = [
     title: "Interior Transformation",
     category: "Interior Painting",
     location: "Greenville, SC",
-    image: "/images/project-1.webp",
+    image: `${import.meta.env.BASE_URL}images/project-1.webp`,
   },
   {
     title: "Cabinet Refresh",
     category: "Cabinet Painting",
     location: "Greenville Area",
-    image: "/images/project-2.webp",
+    image: `${import.meta.env.BASE_URL}images/project-2.webp`,
   },
   {
     title: "Residential Finish",
     category: "Residential Painting",
     location: "Upstate South Carolina",
-    image: "/images/project-3.webp",
+    image: `${import.meta.env.BASE_URL}images/project-3.webp`,
   },
   {
     title: "Detail Work",
     category: "Trim & Finish",
     location: "Greenville Area",
-    image: "/images/project-4.webp",
+    image: `${import.meta.env.BASE_URL}images/project-4.webp`,
   },
   {
     title: "Fresh Interior",
     category: "Interior Painting",
     location: "Greenville, SC",
-    image: "/images/project-5.webp",
+    image: `${import.meta.env.BASE_URL}images/project-5.webp`,
   },
   {
     title: "Cabinet Upgrade",
     category: "Cabinet Painting",
     location: "Upstate South Carolina",
-    image: "/images/project-6.webp",
+    image: `${import.meta.env.BASE_URL}images/project-6.webp`,
   },
 ];
 
@@ -103,7 +103,7 @@ function Projects() {
 
             <div className="group relative overflow-hidden rounded-2xl">
               <img
-                src="/images/project-1.webp"
+                src={`${import.meta.env.BASE_URL}images/project-1.webp`}
                 alt="Interior painting project completed by Next Level Paintwork"
                 className="h-[520px] w-full object-cover transition duration-700 group-hover:scale-[1.02] md:h-[680px]"
               />
@@ -153,7 +153,7 @@ function Projects() {
 
                 <div className="overflow-hidden rounded-2xl">
                   <img
-                    src="/images/before-1.webp"
+                    src={`${import.meta.env.BASE_URL}images/before-1.webp`}
                     alt="Painting project before"
                     className="h-[450px] w-full object-cover"
                   />
@@ -167,7 +167,7 @@ function Projects() {
 
                 <div className="overflow-hidden rounded-2xl">
                   <img
-                    src="/images/after-1.webp"
+                    src={`${import.meta.env.BASE_URL}images/after-1.webp`}
                     alt="Painting project after"
                     className="h-[450px] w-full object-cover"
                   />

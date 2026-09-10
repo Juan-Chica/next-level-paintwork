@@ -13,7 +13,7 @@ function Navbar() {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 md:px-6">
         <Link to="/" onClick={closeMenu} className="flex items-center">
           <img
-            src="/images/next-level-logo.png"
+            src={`${import.meta.env.BASE_URL}images/next-level-logo.png`}
             alt="Next Level Paintwork"
             className="h-11 w-auto object-contain sm:h-12"
           />
