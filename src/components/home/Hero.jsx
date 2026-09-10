@@ -26,9 +26,7 @@ function Hero() {
             <br />
             Fair Prices.
             <br />
-            <span className="text-[var(--accent)]">
-              Next-Level Results.
-            </span>
+            <span className="text-[var(--accent)]">Next-Level Results.</span>
           </h1>
 
           <p className="mt-6 max-w-xl text-base leading-7 text-white/80 sm:text-lg sm:leading-8 md:text-xl">
@@ -37,12 +35,17 @@ function Hero() {
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:gap-4">
-            <a
-              href="#estimate"
+            <button
+              type="button"
+              onClick={() => {
+                document.getElementById("estimate")?.scrollIntoView({
+                  behavior: "smooth",
+                });
+              }}
               className="w-full rounded-lg bg-[var(--accent)] px-6 py-4 text-center font-semibold text-white transition hover:bg-[var(--accent-hover)] sm:w-auto"
             >
               Get a Free Estimate
-            </a>
+            </button>
 
             <Link
               to="/projects"

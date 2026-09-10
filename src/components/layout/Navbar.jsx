@@ -55,12 +55,17 @@ function Navbar() {
             Contact
           </Link>
 
-          <a
-            href="#estimate"
+          <button
+            type="button"
+            onClick={() => {
+              document.getElementById("estimate")?.scrollIntoView({
+                behavior: "smooth",
+              });
+            }}
             className="rounded-lg bg-[var(--accent)] px-5 py-3 text-sm font-semibold text-white transition hover:bg-[var(--accent-hover)]"
           >
             Get a Free Estimate
-          </a>
+          </button>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -119,13 +124,17 @@ function Navbar() {
               Contact
             </Link>
 
-            <a
-              href="#estimate"
-              onClick={closeMenu}
-              className="mt-4 rounded-lg bg-[var(--accent)] px-5 py-4 text-center font-semibold text-white"
+            <button
+              type="button"
+              onClick={() => {
+                document.getElementById("estimate")?.scrollIntoView({
+                  behavior: "smooth",
+                });
+              }}
+              className="rounded-lg bg-[var(--accent)] px-5 py-3 text-sm font-semibold text-white transition hover:bg-[var(--accent-hover)]"
             >
               Get a Free Estimate
-            </a>
+            </button>
           </nav>
         </div>
       )}
