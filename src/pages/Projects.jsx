@@ -4,15 +4,13 @@ import EstimateCTA from "../components/home/EstimateCTA";
 import { Helmet } from "react-helmet-async";
 
 <Helmet>
-  <title>
-    Painting Projects | Next Level Paintwork Greenville, SC
-  </title>
+  <title>Painting Projects | Next Level Paintwork Greenville, SC</title>
 
   <meta
     name="description"
     content="View completed painting projects and transformations by Next Level Paintwork in Greenville and the Upstate South Carolina area."
   />
-</Helmet>
+</Helmet>;
 
 const projects = [
   {
@@ -78,12 +76,18 @@ function Projects() {
                 throughout Greenville and surrounding areas.
               </p>
 
-              <a
-                href="#estimate"
+              <button
+                type="button"
+                onClick={() => {
+                  document.getElementById("estimate")?.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                  });
+                }}
                 className="mt-9 inline-flex rounded-lg bg-[var(--accent)] px-6 py-4 font-semibold text-white transition hover:bg-[var(--accent-hover)]"
               >
                 Start Your Project
-              </a>
+              </button>
             </div>
           </div>
         </section>
@@ -119,9 +123,7 @@ function Projects() {
                   Interior Transformation
                 </h3>
 
-                <p className="mt-2 text-white/70">
-                  Greenville, South Carolina
-                </p>
+                <p className="mt-2 text-white/70">Greenville, South Carolina</p>
               </div>
             </div>
           </div>
@@ -212,9 +214,7 @@ function Projects() {
                       {project.category}
                     </p>
 
-                    <h3 className="mt-2 text-2xl font-bold">
-                      {project.title}
-                    </h3>
+                    <h3 className="mt-2 text-2xl font-bold">{project.title}</h3>
 
                     <p className="mt-2 text-[var(--text-secondary)]">
                       {project.location}
@@ -242,8 +242,8 @@ function Projects() {
 
               <p className="max-w-xl text-lg leading-8 text-white/60 lg:justify-self-end">
                 From preparation to the final coat, every project is approached
-                with care, professional techniques, and attention to the
-                details that create a clean, finished result.
+                with care, professional techniques, and attention to the details
+                that create a clean, finished result.
               </p>
             </div>
           </div>

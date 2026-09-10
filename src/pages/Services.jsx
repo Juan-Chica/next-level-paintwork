@@ -108,12 +108,18 @@ function Services() {
                 and dependable service throughout the Greenville area.
               </p>
 
-              <a
-                href="#estimate"
-                className="mt-9 inline-flex rounded-lg bg-[var(--accent)] px-6 py-4 font-semibold text-white transition hover:bg-[var(--accent-hover)]"
+              <button
+                type="button"
+                onClick={() => {
+                  document.getElementById("estimate")?.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                  });
+                }}
+                className="rounded-lg bg-[var(--accent)] px-5 py-3 font-semibold text-white"
               >
                 Get a Free Estimate
-              </a>
+              </button>
             </div>
           </div>
         </section>
